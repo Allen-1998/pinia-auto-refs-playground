@@ -2,17 +2,17 @@ export default defineStore({
   id: 'test',
   state: () => {
     return {
-      name: '张三',
+      name: 'allen',
     };
   },
   getters: {
     fullName: ({ name }) => {
-      return name + '丰';
+      return name + '.';
     },
   },
   actions: {
     updateName() {
-      this.name = this.name + '丰';
+      this.name = this.name + '.';
     },
   },
 });
